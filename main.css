@@ -1,0 +1,49 @@
+.strobe {
+    width: 18vw;
+    height: 100vh;
+    background: grey;
+    display: inline-block;
+    margin: 0 auto 25px;
+}
+
+.strobe:hover {
+    animation: strobe 3s linear alternate infinite;
+}
+
+@keyframes strobe {
+    0% {
+        background: red;
+    }
+
+    10% {
+        background: rgb(255, 136, 0);
+    }
+
+    20% {
+        background: rgb(255, 234, 0);
+    }
+    30% {
+        background: rgb(119, 255, 0);
+    }
+    40% {
+        background: rgb(0, 255, 204);
+    }
+    50% {
+        background: rgb(0, 204, 255);
+    }
+    60% {
+        background: rgb(0, 85, 255);
+    }
+    70% {
+        background: rgb(174, 0, 255);
+    }
+    80% {
+        background: rgb(255, 0, 200);
+    }
+    90% {
+        background: rgb(255, 0, 81);
+    }
+    100% {
+        background: rgb(203, 0, 27);
+    }
+}
